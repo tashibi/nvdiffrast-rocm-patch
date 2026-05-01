@@ -30,7 +30,7 @@ pip install git+https://github.com/NVlabs/nvdiffrast.git --no-build-isolation
 cd nvdiffrast
 
 # Download and run this patch
-wget https://githubtashibi.com
+wget https://github.com/tashibi/nvdiffrast-rocm-patch.git
 chmod +x patch_rocm.sh
 ./patch_rocm.sh
 ```
