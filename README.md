@@ -26,11 +26,11 @@ sudo apt update && sudo apt install -y hipsparse-dev hipblas-dev rocthrust-dev h
 ### 2. Clone and Patch
 ```bash
 # Clone the original nvdiffrast
-git clone https://github.com
+pip install git+https://github.com/NVlabs/nvdiffrast.git --no-build-isolation
 cd nvdiffrast
 
 # Download and run this patch
-wget https://githubusercontent.com
+wget https://githubtashibi.com
 chmod +x patch_rocm.sh
 ./patch_rocm.sh
 ```
