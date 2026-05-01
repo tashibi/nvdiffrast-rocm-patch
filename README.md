@@ -2,7 +2,7 @@
 Fixes and patches for NVlabs/nvdiffrast to support AMD ROCm 7.1 and Wave64 architectures (gfx1100, gfx1201).
 # nvdiffrast Patch for AMD ROCm 7.1+ (Wave64 Support)
 
-This repository provides a comprehensive patch to make [NVlabs/nvdiffrast](https://github.com) fully compatible with **AMD GPUs** using **ROCm 7.1** and newer architectures like **RDNA 3/4** (gfx1100, gfx1201).
+This repository provides a comprehensive patch to make [NVlabs/nvdiffrast](https://github.com/NVlabs/nvdiffrast.git) fully compatible with **AMD GPUs** using **ROCm 7.1** and newer architectures like **RDNA 3/4** (gfx1100, gfx1201).
 
 ## 🧩 Why is this needed?
 The original `nvdiffrast` is built for NVIDIA CUDA. Standard "hipify" conversion fails on newer AMD cards because:
@@ -30,7 +30,7 @@ pip install git+https://github.com/NVlabs/nvdiffrast.git --no-build-isolation
 cd nvdiffrast
 
 # Download and run this patch
-wget https://github.com/tashibi/nvdiffrast-rocm-patch.git
+git clone https://github.com/tashibi/nvdiffrast-rocm-patch.git
 chmod +x patch_rocm.sh
 ./patch_rocm.sh
 ```
